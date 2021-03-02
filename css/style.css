@@ -108,13 +108,25 @@ img {
   text-decoration: underline;
 }
 
+
+.container {
+}
+
+#contact {
+}
+
+#mylinks {
+}
+
 #hero h1 {
   text-align: center;
 }
 
+
 .logo {
   max-width: 50px;
   position: fixed;
+  display: inline-block;
 }
 
 #work h2 {
@@ -123,6 +135,11 @@ img {
 
 #work p {
   margin: 15px 10px;
+}
+
+
+.navbar {
+  background-color: rgb(255,255,255);
 }
 
 nav {
