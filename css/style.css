@@ -6,6 +6,10 @@ Tertiary Color (Light Grey):rgb(244,244,244);
 Shadow Color (Grey): rgb(218,218,218)
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(255,255,255);
   font-family: 'Bebas Neue', cursive;
@@ -108,8 +112,14 @@ img {
   text-decoration: underline;
 }
 
+/* Layout styling */
 
 .container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
 }
 
 #contact {
