@@ -343,7 +343,12 @@ nav>ul>li>a {
   text-decoration: underline;
 }
 
-
+#aboutme {
+  margin-top: 50px;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 6%;
+}
 
 #aboutsummary {
   text-align: center;
@@ -502,9 +507,6 @@ Medium devices (640px and larger)
     padding-right: 3%;
   }
 
-#aboutme {
-  margin: 0;
-}
   #aboutsummary {
     padding-left: 4%;
     padding-right: 4%;
