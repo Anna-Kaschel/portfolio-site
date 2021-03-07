@@ -5,6 +5,9 @@ Secondary Color (Black): rgb(0,0,0);
 Tertiary Color (Light Grey):rgb(244,244,244);
 Shadow Color (Grey): rgb(218,218,218)
 */
+
+/* ---------General--------*/
+
 * {
   box-sizing: border-box;
 }
@@ -113,47 +116,10 @@ iframe {
   margin-bottom: 20px;
 }
 
-.button {
-  background-color: rgb(244, 244, 244);
-  width: 150px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 3px;
-  border: none;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 0.889em;
-  font-weight: 300;
-  padding: 10px;
-  margin-bottom: 8%;
-  margin-left: 8%;
-  margin-right: 8%;
-  margin-top: 4%;
-}
-
-.button:hover {
-  opacity: 0.8;
-  text-decoration: underline;
-}
-
-.buttoncontact {
-  background-color: rgb(255, 255, 255);
-  max-width: 100px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 3px;
-  border: none;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 0.889em;
-  font-weight: 300;
-  padding: 10px;
-}
-
-.buttoncontact:hover {
-  opacity: 0.8;
-  text-decoration: underline;
-}
 
 /* Layout styling */
+
+
 .container {
   margin: 15px;
   text-align: center;
@@ -255,8 +221,73 @@ svg {
   display: inline-block;
 }
 
+
+#projects {
+  padding-top: 40px;
+}
+
+/* ---------Footer Styling--------*/
+
+footer {
+  background-color: rgb(244, 244, 244);
+  padding-bottom: 15px
+}
+
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+nav>ul>li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+}
+
+nav>ul>li>a {
+  padding: 0px 15px;
+  font-weight: 300;
+}
+
+nav>ul>li>a {
+  width: 100%;
+  display: inline-block;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 0.889em;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.buttoncontact {
+  background-color: rgb(255, 255, 255);
+  max-width: 100px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 0.889em;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.buttoncontact:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+
 #contact {
   padding: 30px;
+  align-items: center;
+  text-align: center;
+
 }
 
 #contact p, h2 {
@@ -285,6 +316,33 @@ svg {
   font-size: 0.8em;
   font-weight: 300;
 }
+
+
+
+/* ---------About Page--------*/
+
+.button {
+  background-color: rgb(244, 244, 244);
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 0.889em;
+  font-weight: 300;
+  padding: 10px;
+  margin-bottom: 8%;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 4%;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
 #aboutme {
   margin-left: 6%;
   margin-right: 6%;
@@ -341,14 +399,6 @@ svg {
   padding-bottom: 10px;
 }
 
-#skills {
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-
-#tools {
-  padding-top: 15px;
-}
 
 #aboutheading{
   text-align: center;
@@ -366,49 +416,13 @@ svg {
   text-align: center;
 }
 
-
-nav>ul>li>a {
-  width: 100%;
-  display: inline-block;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 0.889em;
-  font-weight: 300;
-  letter-spacing: 0.5px;
+#skills {
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
-}
-
-nav>ul>li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0;
-}
-
-nav>ul>li>a {
-  padding: 0px 15px;
-  font-weight: 300;
-}
-
-footer {
-  background-color: rgb(244, 244, 244);
-  padding-bottom: 15px
-}
-
-#contact {
-  align-items: center;
-  text-align: center;
-}
-
-#projects {
-  padding-top: 40px;
+#tools {
+  padding-top: 15px;
 }
 
 /* ==============================
