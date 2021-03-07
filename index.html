@@ -11,14 +11,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body id="workprojects">
+<body>
   <header>
-    <div>
+    <div id="navbar">
       <img src="img/logo/logo.png" alt="My Image" class="logo">
       <nav>
         <ul>
-          <li><a href="index.html"><span>Work</span></a></li>
-          <li><a href="about.html"><span>About</span></a></li>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -35,12 +35,13 @@
     </div>
 
     <div id="work" class="container">
-      <div class="row">
-        <div class="project-teaser">
-          <div><!-- Row -->
-            <a href="mountainfolk.html">
-              <div><!-- Column -->
 
+      <div class="row"><!-- Row -->
+
+        <div class="col-md-6"><!-- Column -->
+          <div class="project-teaser">
+            <a href="mountainfolk.html">
+              <div>
                 <picture>
                   <source srcset="img/mountainfolk/MountainfolkHomeImage@600.png" media="(max-width:767px)">
                     <img src="img/mountainfolk/MountainfolkHomeImage@1200.png" alt="My Image" class=rounded>
@@ -58,34 +59,37 @@
             </div>
           </div>
 
+          <div class="col-md-6"><!-- Column -->
+            <div class="project-teaser">
+              <div class="row"><!-- Row -->
+                <a href="foodielicious.html">
+                  <div>
+                    <picture>
+                      <source srcset="img/foodielicious/FoodieliciousHomeImage@600.png" media="(max-width:767px)">
+                        <img src="img/foodielicious/FoodieliciousHomeImage@1200.png" alt="My Image">
+                      </picture>
+                    </div>
 
-          <div class="project-teaser"><!-- Row -->
-            <div class="row">
-              <a href="foodielicious.html">
-                <div><!-- Column -->
-                  <picture>
-                    <source srcset="img/foodielicious/FoodieliciousHomeImage@600.png" media="(max-width:767px)">
-                      <img src="img/foodielicious/FoodieliciousHomeImage@1200.png" alt="My Image">
-                    </picture>
-                  </div>
-
-                  <div class="project-summary"><!-- Column -->
-                    <h2>Foodielicious
-                    </h2>
-                    <p>
-                      Foodielicious is a cooking app with a personalized recipe feed. The key is a unique algorithm, that recognizes what the user likes and customizes their experience to their nutritional needs and personal tastes.
-                    </p>
-                  </div>
-                </a>
+                    <div class="project-summary"><!-- Column -->
+                      <h2>Foodielicious
+                      </h2>
+                      <p>
+                        Foodielicious is a cooking app with a personalized recipe feed. The key is a unique algorithm, that recognizes what the user likes and customizes their experience.
+                      </p>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="row">
 
-            <div class="project-teaser"><!-- Row -->
-              <div class="row">
+
+          <div class="row"><!-- Row -->
+
+            <div class="col-md-6"><!-- Column -->
+              <div class="project-teaser">
                 <a href="dreambig.html">
-                  <div><!-- Column -->
+                  <div>
                     <picture>
                       <source srcset="img/dreambig/DreamBigHomeImage@600.png" media="(max-width:767px)">
                         <img src="img/dreambig/DreamBigHomeImage@1200.png" alt="My Image">
@@ -103,11 +107,10 @@
                 </div>
               </div>
 
-
-              <div class="project-teaser"><!-- Row -->
-                <div class="row">
+              <div class="col-md-6"><!-- Column -->
+                <div class="project-teaser">
                   <a href="chromatique.html">
-                    <div><!-- Column -->
+                    <div>
                       <picture>
                         <source srcset="img/chromatique/ChromatiqueHomeImage@600.png" media="(max-width:767px)">
                           <img src="img/chromatique/ChromatiqueHomeImage@1200.png" alt="My Image">
@@ -118,7 +121,7 @@
                         <h2>Chromatique
                         </h2>
                         <p>
-                          A music player app for creatives and color-obsessed people based on the concept of synesthesia.
+                          An intuitive and engaging music player app based on the concept of synesthesia. The app targets young creatives, but it is for anyone who loves colors!
                         </p>
                       </div>
                     </a>
