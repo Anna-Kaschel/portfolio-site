@@ -108,10 +108,8 @@ a:active {
 
 iframe {
   display: flex;
-  max-width: 250px;
+  max-width: 70%;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 
@@ -128,11 +126,6 @@ img {
   width: 100%;
 }
 
-svg {
-  max-width: 30px;
-  display: inline-block;
-  text-align: center;
-}
 
 .row {
   margin: 0px;
@@ -221,9 +214,7 @@ svg {
 }
 
 
-#projects {
-  padding-top: 40px;
-}
+
 
 /* ---------Footer Styling--------*/
 
@@ -232,6 +223,11 @@ footer {
   padding-bottom: 15px
 }
 
+svg {
+  max-width: 40px;
+  display: inline-block;
+  text-align: center;
+}
 
 ul {
   display: block;
@@ -257,7 +253,7 @@ nav>ul>li>a {
 nav>ul>li>a {
   width: 100%;
   display: inline-block;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -266,12 +262,12 @@ nav>ul>li>a {
 .buttoncontact {
   background-color: rgb(0,0,0);
   color: rgb(255,255,255);
-  max-width: 100px;
+  max-width: 150px;
   display: inline-block;
   text-align: center;
   border-radius: 3px;
   border: none;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   padding: 10px;
@@ -279,12 +275,12 @@ nav>ul>li>a {
   margin-bottom: 1%;
   margin-left: 4%;
   margin-right: 4%;
-  margin-top: 2%;
+  margin-top: 6%;
   transition: 0.2s opacity;
 }
 
 .buttoncontact:hover {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   color: rgb(255,255,255);
@@ -293,7 +289,7 @@ nav>ul>li>a {
 }
 
 .buttoncontact:visited{
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   color: rgb(255,255,255);
@@ -303,37 +299,36 @@ nav>ul>li>a {
 
 
 #contact {
-  padding: 30px;
+  padding: 8%;
   align-items: center;
   text-align: center;
-
 }
 
 #contact p, h2 {
-  margin: 0px;
+  margin: 0;
 }
 
 #contact p {
-  padding: 15px;
+  padding: 2%;
 }
 
 #mylinks {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 2%;
 }
 
 #mylinks>a {
   display: inline-block;
-  padding: 10px;
-  font-family: 'Bebas Neue', cursive;
+  padding: 2%;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   text-align: center;
 }
 
 #copyright p {
-  font-size: 0.8em;
-  font-weight: 300;
+  font-size: 0.889em;
+  font-weight: 400;
 }
 
 
@@ -342,18 +337,18 @@ nav>ul>li>a {
 
 .button {
   background-color: rgb(0,0,0);
-  width: 150px;
+  max-width: 150px;
   display: inline-block;
   text-align: center;
   border-radius: 3px;
   border: none;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   color: rgb(255,255,255);
   box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.3);
   padding: 10px;
-  margin-bottom: 8%;
+  margin-bottom: 12%;
   margin-left: 8%;
   margin-right: 8%;
   margin-top: 4%;
@@ -361,7 +356,7 @@ nav>ul>li>a {
 }
 
 .button:hover {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   color: rgb(255,255,255);
@@ -370,13 +365,15 @@ nav>ul>li>a {
 }
 
 .button:visited {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   color: rgb(255,255,255);
   opacity: 0.8;
   text-decoration: underline;
 }
+
+
 
 #aboutme {
   margin-top: 50px;
@@ -389,11 +386,11 @@ nav>ul>li>a {
   text-align: center;
   padding-left: 4%;
   padding-right: 4%;
-  padding-top: 4%;
+  padding-top: 8%;
 }
 
 #aboutsummary h1 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 1.8em;
   font-weight: 300;
   line-height: 0.7;
@@ -468,10 +465,23 @@ nav>ul>li>a {
 }
 
 
+Resources
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+.button {
+  margin-top: 6%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.buttoncontact {
+  margin: 2%;
+}
+
 
   header {
     text-align: unset;
@@ -489,7 +499,7 @@ Medium devices (640px and larger)
   nav>ul>li>a {
     padding-left: 50px;
     padding-right: 0px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', arial, helvetica, sans-serif;
     font-size: 1em;
   }
 
@@ -512,6 +522,20 @@ Medium devices (640px and larger)
   body p {
     font-size: 1.111em;
   }
+
+  iframe {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+
+  svg {
+    max-width: 50px;
+    display: inline-block;
+    text-align: center;
+  }
+
 
   .col-md-6 {
     width: 50%;
@@ -544,6 +568,7 @@ Medium devices (640px and larger)
     margin-right: auto;
   }
 
+
   #work {
     display: block;
     align-items: center;
@@ -560,7 +585,6 @@ Medium devices (640px and larger)
     grid-gap: 30px 2%;
   }
 
-
   #navbar {
     max-width: 1000px;
     margin-left: auto;
@@ -569,15 +593,60 @@ Medium devices (640px and larger)
     padding-right: 3%;
   }
 
+  #aboutme img {
+    margin-top: 0;
+  }
+
+  #aboutme {
+    margin-top: 50px;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 6%;
+    max-width: 1000px;
+  }
   #aboutsummary {
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 4%;
-    padding-top: 0%;
+    padding-top: 6%;
   }
 
   #aboutsummary p {
     text-align: left;
+  }
+
+  #aboutsummary h2 {
+    text-align: left;
+  }
+
+
+  #mylinks {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  #mylinks>a {
+    display: inline-block;
+    padding: 20px;
+    font-family: 'Bebas Neue', arial, helvetica, sans-serif;
+    font-size: 1.1111111111111112em;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  #copyright p {
+    font-size: 1.1111111111111112em;
+    font-weight: 400;
+  }
+
+  #contact {
+    padding: 4%;
+    align-items: center;
+    text-align: center;
+  }
+
+  #mystory {
+    padding-bottom: 6%;
   }
 
   [class*="col-"] {
@@ -589,18 +658,19 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
-  svg {
-    max-width: 40px;
-    display: inline-block;
-    text-align: center;
+  .icon-wrapper svg {
+    width: 50px;
   }
 }
+
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   @media only screen and (min-width: 1440px) {
+
+
     .container {
       max-width: 1200px;
       margin-left: auto;
@@ -671,9 +741,44 @@ Large devices (1024px or larger)
       padding: 50px;
     }
     svg {
-      max-width: 50px;
+      max-width: 60px;
       display: inline-block;
       text-align: center;
+    }
+
+    .buttoncontact {
+      font-size: 1.1111111111111112em;
+      max-width: 240px;
+    }
+
+    .buttoncontact:hover {
+      font-size: 1.1111111111111112em;
+    }
+
+    .buttoncontact:visited{
+      font-size: 1.1111111111111112em;
+    }
+
+    .button {
+      font-size: 1.1111111111111112em;
+      max-width: 240px;
+    }
+
+    .button:hover {
+      font-size: 1.1111111111111112em;
+    }
+
+    .button:visited{
+      font-size: 1.1111111111111112em;
+    }
+
+    #mylinks>a {
+      font-size: 1.1111111111111112em;
+    }
+
+    #copyright p {
+      font-size: 1.1111111111111112em;
+      font-weight: 400;
     }
   }
 
@@ -701,6 +806,7 @@ X-large devices (1440px or larger)
     body p {
       font-size: 1.5em;
     }
+
     #navbar {
       max-width: 1200px;
       margin-left: auto;
@@ -709,9 +815,6 @@ X-large devices (1440px or larger)
       padding-right: 4%;
     }
 
-    .button {
-      margin: 2%;
-    }
 
     .container {
       max-width: 1200px;
