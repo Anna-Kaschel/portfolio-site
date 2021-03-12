@@ -128,11 +128,6 @@ img {
   width: 100%;
 }
 
-svg {
-  max-width: 30px;
-  display: inline-block;
-  text-align: center;
-}
 
 .row {
   margin: 0px;
@@ -232,6 +227,11 @@ footer {
   padding-bottom: 15px
 }
 
+footer > svg {
+  max-width: 30px;
+  display: inline-block;
+  text-align: center;
+}
 
 ul {
   display: block;
@@ -468,7 +468,6 @@ nav>ul>li>a {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -688,7 +687,7 @@ Large devices (900px or larger)
     #contact {
       padding: 50px;
     }
-    svg {
+    footer > svg {
       max-width: 50px;
       display: inline-block;
       text-align: center;
