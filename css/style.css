@@ -257,7 +257,7 @@ nav>ul>li>a {
 nav>ul>li>a {
   width: 100%;
   display: inline-block;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -271,7 +271,7 @@ nav>ul>li>a {
   text-align: center;
   border-radius: 3px;
   border: none;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   padding: 10px;
@@ -284,7 +284,7 @@ nav>ul>li>a {
 }
 
 .buttoncontact:hover {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   color: rgb(255,255,255);
@@ -293,7 +293,7 @@ nav>ul>li>a {
 }
 
 .buttoncontact:visited{
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   color: rgb(255,255,255);
@@ -324,8 +324,9 @@ nav>ul>li>a {
 
 #mylinks>a {
   display: inline-block;
-  padding: 10px;
-  font-family: 'Bebas Neue', cursive;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   text-align: center;
@@ -361,7 +362,7 @@ nav>ul>li>a {
 }
 
 .button:hover {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   color: rgb(255,255,255);
@@ -370,7 +371,7 @@ nav>ul>li>a {
 }
 
 .button:visited {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 0.889em;
   font-weight: 300;
   color: rgb(255,255,255);
@@ -393,7 +394,7 @@ nav>ul>li>a {
 }
 
 #aboutsummary h1 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 1.8em;
   font-weight: 300;
   line-height: 0.7;
@@ -489,7 +490,7 @@ Medium devices (640px and larger)
   nav>ul>li>a {
     padding-left: 50px;
     padding-right: 0px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', arial, helvetica, sans-serif;
     font-size: 1em;
   }
 
@@ -569,11 +570,17 @@ Medium devices (640px and larger)
     padding-right: 3%;
   }
 
+  #aboutme img {
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 6%;
+  }
+
   #aboutsummary {
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 4%;
-    padding-top: 0%;
+    padding-top: 4%;
   }
 
   #aboutsummary p {
@@ -589,17 +596,20 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
-  svg {
-    max-width: 40px;
-    display: inline-block;
-    text-align: center;
+
+  .icon-wrapper svg {
+    width: 45px;
+    padding-left: 1%;
+    padding-right: 1%;
   }
 }
 
+
+
 /* ==============================
-Large devices (1024px or larger)
+Large devices (900px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 900px) {
   @media only screen and (min-width: 1440px) {
     .container {
       max-width: 1200px;
@@ -641,6 +651,14 @@ Large devices (1024px or larger)
       padding-right: 6%;
     }
 
+
+    #aboutsummary {
+      padding-left: 4%;
+      padding-right: 4%;
+      padding-bottom: 4%;
+      padding-top: 10%;
+    }
+
     #aboutme {
       max-width: 1200px;
       margin-left: auto;
@@ -663,7 +681,7 @@ Large devices (1024px or larger)
       font-size: 1.3em;
     }
 
-    body p {
+    body p, li {
       font-size: 1.3em;
     }
 
@@ -710,8 +728,16 @@ X-large devices (1440px or larger)
     }
 
     .button {
-      margin: 2%;
+      margin: 3%;
+      padding: 1.5%;
+      max-width: 150px;
     }
+
+    .buttoncontact {
+      margin-top: 2%;
+      margin-bottom: 0;
+      padding: 1.5%;
+      max-width: 150px;
 
     .container {
       max-width: 1200px;
@@ -761,9 +787,20 @@ img{
       max-width: 1400px;
       margin-left: auto;
       margin-right: auto;
+      padding-left: 4%;
+      padding-right: 4%;
     }
 
     .button {
-      margin: 2%;
+      margin: 3%;
+      padding: 1.5%;
+      max-width: 150px;
+    }
+
+    .buttoncontact {
+      margin-top: 2%;
+      margin-bottom: 0;
+      padding: 1.5%;
+      max-width: 150px;
     }
   }
