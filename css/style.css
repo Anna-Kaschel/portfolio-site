@@ -204,7 +204,7 @@ img {
   line-height: 1.5em
 }
 
-.logo {
+#logo {
   max-width: 50px;
   text-align: center;
   display: inline-block;
@@ -551,19 +551,19 @@ width: 30%;
   max-width: 400px;
 }
 
-g{
+#aboutheading g{
  display: flex;
  align-items: center;
 }
 
-g >path{
+#aboutheading g >path{
   margin: 2%;
 }
-g >polygon{
+#aboutheading g >polygon{
   margin: 2%;
 }
 
-g path, polygon {
+#aboutheading g path, polygon {
   transform: translateY(2px);
   animation-name: wiggleWiggle;
   animation-duration: 2.5s;
