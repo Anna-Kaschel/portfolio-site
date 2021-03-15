@@ -458,6 +458,16 @@ nav>ul>li>a {
 }
 
 /* ---------Animation--------*/
+
+
+#work >row >div {
+  animation-name: swing;
+}
+
+.project-teaser {
+  animation-name: zoom;
+}
+
 @-webkit-keyframes swing
 {
     15%
@@ -542,12 +552,8 @@ nav>ul>li>a {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-#word {
-  background-color: white;
-}
-
 .animation {
-width: 30%;
+  width: 60%;
   max-width: 400px;
 }
 
@@ -945,7 +951,7 @@ img{
     .buttoncontact {
       margin-top: 2%;
       margin-bottom: 0;
-      padding: 1%;
+      padding: 20px;
       max-width: 200px;
     }
   }
