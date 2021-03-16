@@ -553,23 +553,17 @@ nav>ul>li>a {
 }
 
 .animation {
-  width: 60%;
+  width: 50%;
   max-width: 400px;
 }
 
-#aboutheading g{
- display: flex;
- align-items: center;
-}
 
-#aboutheading g >path{
-  margin: 2%;
-}
-#aboutheading g >polygon{
+#aboutheading svg >path{
   margin: 2%;
 }
 
-#aboutheading g path, polygon {
+
+#aboutheading svg > path {
   transform: translateY(2px);
   animation-name: wiggleWiggle;
   animation-duration: 2.5s;
