@@ -20,6 +20,13 @@ body {
   color: rgb(0, 0, 0);
 }
 
+::selection {
+  background-color: rgb(244,244,244);
+}
+::-moz-selection {
+  background-color: rgb(244,244,244);
+}
+
 header {
   background-color: rgb(244, 244, 244);
   padding-top: 5%;
@@ -754,7 +761,6 @@ Medium devices (640px and larger)
 Large devices (900px or larger)
 ================================= */
 @media only screen and (min-width: 900px) {
-  @media only screen and (min-width: 1440px) {
     .container {
       max-width: 1200px;
       margin-left: auto;
