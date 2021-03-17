@@ -8,6 +8,11 @@ Shadow Color (Grey): rgb(218,218,218)
 
 /* ---------General--------*/
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
