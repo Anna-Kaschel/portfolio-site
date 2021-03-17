@@ -8,11 +8,6 @@ Shadow Color (Grey): rgb(218,218,218)
 
 /* ---------General--------*/
 
-
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -668,30 +663,38 @@ Medium devices (640px and larger)
     padding-right: 30px;
   }
 
-main {
-  padding-top: 108px;
-}
+  main {
+    padding-top: 108px;
+  }
+
   #logo {
     margin: 0;
     max-width: 70px;
   }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
 
-  .navtoggle li:last-child {
-  display: none;
-}
+.navtoggle li:last-child, .navtoggle.responsive li:last-child {
+    display: none;
+  }
 
-.navtoggle.responsive li  {
-  display: block;
-}
+  .navtoggle.responsive li  {
+    display: inline-block;
+    padding: 0 0;
+    margin-left: 0;
+  }
 
-nav > ul {
-  margin: 1em 0;
-  margin-top: 25px;
-  line-height: normal;
-}
+  .navtoggle.responsive nav {
+    padding: 0 0 0;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+    margin-top: 25px;
+    line-height: normal;
+  }
 
   nav {
     width: auto;
