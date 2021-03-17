@@ -27,20 +27,74 @@ body {
   background-color: rgb(244,244,244);
 }
 
+
 header {
   background-color: rgb(244, 244, 244);
-  padding-top: 5%;
+  padding: 10px 0 4px;
   position: fixed;
   z-index: 9999999;
   width: 100%;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle nav>ul>li>a>svg {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  height: 20px;
+  margin-right: 15px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+#logo {
+  max-width: 50px;
   text-align: center;
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+nav>ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  line-height: 0;
+}
+
+nav>ul>li>a {
+  width: 100%;
+  display: inline-block;
+  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
+  font-size: 0.889em;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 main {
   font-family: 'Cormorant Garamond', arial, helvetica, sans-serif;
   font-size: 1em;
   font-weight: 300;
-  padding-top: 108px;
+  padding-top: 80px;
 }
 
 h1 {
@@ -211,11 +265,6 @@ img {
   line-height: 1.5em
 }
 
-#logo {
-  max-width: 50px;
-  text-align: center;
-  display: inline-block;
-}
 
 #work {
   text-align: center;
@@ -240,7 +289,7 @@ footer > svg {
   text-align: center;
 }
 
-ul {
+footer> ul {
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -250,25 +299,6 @@ ul {
   padding-inline-start: 0px;
 }
 
-nav>ul>li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0;
-}
-
-nav>ul>li>a {
-  padding: 0px 15px;
-  font-weight: 300;
-}
-
-nav>ul>li>a {
-  width: 100%;
-  display: inline-block;
-  font-family: 'Bebas Neue', arial, helvetica, sans-serif;
-  font-size: 0.889em;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-}
 
 .buttoncontact {
   background-color: rgb(0,0,0);
@@ -633,9 +663,39 @@ Medium devices (640px and larger)
     padding-right: 30px;
   }
 
+main {
+  padding-top: 108px;
+}
+  #logo {
+    margin: 0;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+nav > ul {
+  margin: 1em 0;
+  line-height: normal;
+}
+
   nav {
     width: auto;
     float: right;
+  }
+
+
+  nav>ul>li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
   }
 
   nav>ul>li>a {
@@ -689,11 +749,18 @@ Medium devices (640px and larger)
 
 
   #hero {
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 8%;
+    margin-right: 8%;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 0;
+  }
+
+  #hero >div> h3 {
+    text-align: center;
+    padding-left: 6%;
+    padding-right: 6%;
   }
 
   #work {
