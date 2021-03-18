@@ -578,19 +578,19 @@ ul {
 /* ---------Button 1 (footer)--------*/
 
 .glow-on-hover1 {
-  margin-bottom: 6%;
+  margin-bottom: 10%;
   margin-left: 8%;
   margin-right: 8%;
   margin-top: 4%;
-  width: 180px;
-  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 200px;
   font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 1.111em;
   font-weight: 300;
   line-height: 1em;
   letter-spacing: 0.5px;
   text-align: center;
-  border: none;
   outline: none;
   cursor: pointer;
   position: relative;
@@ -640,15 +640,17 @@ ul {
     border-radius: 10px;
 }
 
+
 /* ---------Button 2--------*/
 
 .glow-on-hover2 {
-  margin-bottom: 8%;
+  margin-bottom: 10%;
   margin-left: 8%;
   margin-right: 8%;
   margin-top: 4%;
-  width: 180px;
-  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 200px;
   font-family: 'Bebas Neue', arial, helvetica, sans-serif;
   font-size: 1.111em;
   font-weight: 300;
@@ -686,7 +688,7 @@ ul {
 }
 
 .glow-on-hover2:active:after {
-    background: rgb(244,244,244);
+    background: white;
 }
 
 .glow-on-hover2:hover:before {
@@ -703,6 +705,15 @@ ul {
     left: 0;
     top: 0;
     border-radius: 10px;
+}
+
+
+#contact >a {
+  text-decoration:none;
+}
+
+#mystory >span >a{
+  text-decoration:none;
 }
 
 @keyframes glowing {
@@ -751,8 +762,10 @@ Medium devices (640px and larger)
   }
 
   .glow-on-hover1 {
-    width: 220px;
-    height: 50px;
+    margin-bottom: 4%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 250px;
     font-family: 'Bebas Neue', arial, helvetica, sans-serif;
     font-size: 1.3em;
     font-weight: 300;
@@ -761,8 +774,10 @@ Medium devices (640px and larger)
   }
 
     .glow-on-hover2 {
-      width: 220px;
-      height: 50px;
+      margin-bottom: 4%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      width: 250px;
       font-family: 'Bebas Neue', arial, helvetica, sans-serif;
       font-size: 1.3em;
       font-weight: 300;
