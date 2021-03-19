@@ -1,4 +1,4 @@
-console.log ("Hi! Welcome to My Portfolio Site")
+console.log("Hi! Welcome to My Portfolio Site");
 
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');
@@ -17,8 +17,7 @@ $('a[href*="#"]')
   .click(function(event) {
     // On-page links
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-      &&
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
       location.hostname == this.hostname
     ) {
       // Figure out element to scroll to
@@ -38,9 +37,9 @@ $('a[href*="#"]')
           if ($target.is(":focus")) { // Checking if the target was focused
             return false;
           } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
-          };
+          }
         });
       }
     }

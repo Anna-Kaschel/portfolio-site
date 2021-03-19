@@ -5,9 +5,7 @@ Secondary Color (Black): rgb(0,0,0);
 Tertiary Color (Light Grey):rgb(244,244,244);
 Shadow Color (Grey): rgb(218,218,218)
 */
-
 /* ---------General--------*/
-
 * {
   box-sizing: border-box;
 }
@@ -18,7 +16,9 @@ Shadow Color (Grey): rgb(218,218,218)
   -moz-appearance: none;
   -webkit-border-radius: 0;
   appearance: none;
+  outline: 0;
 }
+
 
 body {
   background-color: rgb(255, 255, 255);
@@ -29,12 +29,12 @@ body {
 }
 
 ::selection {
-  background-color: rgb(244,244,244);
-}
-::-moz-selection {
-  background-color: rgb(244,244,244);
+  background-color: rgb(244, 244, 244);
 }
 
+::-moz-selection {
+  background-color: rgb(244, 244, 244);
+}
 
 header {
   background-color: rgb(244, 244, 244);
@@ -64,13 +64,14 @@ header {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 20px 0;
   margin-left: 25px;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -87,6 +88,7 @@ nav>ul {
   margin: 0px;
   list-style-type: none;
   line-height: 0;
+  padding-inline-start: 0px;
 }
 
 nav>ul>li>a {
@@ -162,7 +164,6 @@ a:hover {
 a:hover,
 a:focus {
   color: rgb(0, 0, 0);
-  text-decoration: underline;
 }
 
 a:visited {
@@ -183,10 +184,7 @@ iframe {
   margin-bottom: 20px;
 }
 
-
 /* Layout styling */
-
-
 .container {
   margin: 15px;
   text-align: center;
@@ -196,7 +194,6 @@ iframe {
 img {
   width: 100%;
 }
-
 
 .row {
   margin: 0px;
@@ -273,25 +270,22 @@ img {
   line-height: 1.5em
 }
 
-
 #work {
   text-align: center;
   display: inline-block;
 }
-
 
 #projects {
   padding-top: 40px;
 }
 
 /* ---------Footer Styling--------*/
-
 footer {
   background-color: rgb(244, 244, 244);
   padding-bottom: 15px
 }
 
-footer > svg {
+footer>svg {
   max-width: 30px;
   display: inline-block;
   text-align: center;
@@ -300,19 +294,14 @@ footer > svg {
 ul {
   display: block;
   list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
 }
-
 
 #contact {
   display: block;
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 10px;
   align-items: center;
   text-align: center;
 }
@@ -345,11 +334,7 @@ ul {
   font-weight: 300;
 }
 
-
-
 /* ---------About Page--------*/
-
-
 #aboutme {
   margin-top: 0;
   margin-left: 6%;
@@ -402,13 +387,12 @@ ul {
   padding-bottom: 10px;
 }
 
-
-#aboutheading{
+#aboutheading {
   text-align: center;
   display: block;
 }
 
-#aboutheading h1{
+#aboutheading h1 {
   line-height: 0.2;
   padding-bottom: 2%;
   padding-left: 2%;
@@ -429,9 +413,7 @@ ul {
 }
 
 /* ---------Animation--------*/
-
-
-#work >row >div {
+#work>row>div {
   animation-name: swing;
 }
 
@@ -439,75 +421,71 @@ ul {
   animation-name: zoom;
 }
 
-@-webkit-keyframes swing
-{
-  15%
-  {
+@-webkit-keyframes swing {
+  15% {
     -webkit-transform: translateX(5px);
     transform: translateX(5px);
   }
-  30%
-  {
+
+  30% {
     -webkit-transform: translateX(-5px);
     transform: translateX(-5px);
   }
-  50%
-  {
+
+  50% {
     -webkit-transform: translateX(3px);
     transform: translateX(3px);
   }
-  65%
-  {
+
+  65% {
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
   }
-  80%
-  {
+
+  80% {
     -webkit-transform: translateX(2px);
     transform: translateX(2px);
   }
-  100%
-  {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-@keyframes swing
-{
-  15%
-  {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px);
-  }
-  30%
-  {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
-  }
-  50%
-  {
-    -webkit-transform: translateX(3px);
-    transform: translateX(3px);
-  }
-  65%
-  {
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-  }
-  80%
-  {
-    -webkit-transform: translateX(2px);
-    transform: translateX(2px);
-  }
-  100%
-  {
+
+  100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
 
-.swing:hover
-{
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.swing:hover {
   -webkit-animation: swing 1s ease;
   animation: swing 1s ease;
   -webkit-animation-iteration-count: 1;
@@ -515,12 +493,14 @@ ul {
 }
 
 .zoom {
-  transition: transform .2s; /* Animation */
+  transition: transform .2s;
+  /* Animation */
   margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .animation {
@@ -528,13 +508,11 @@ ul {
   max-width: 400px;
 }
 
-
-#aboutheading svg >path{
+#aboutheading svg>path {
   margin: 2%;
 }
 
-
-#aboutheading svg > path {
+#aboutheading svg>path {
   transform: translateY(2px);
   animation-name: wiggleWiggle;
   animation-duration: 2.5s;
@@ -542,6 +520,7 @@ ul {
 }
 
 @keyframes wiggleWiggle {
+
   20%,
   100% {
     transform: translate(0, 2px);
@@ -550,6 +529,7 @@ ul {
   0% {
     transform: translate(0, 0px);
   }
+
   10% {
     transform: translate(0, 2px);
   }
@@ -583,12 +563,8 @@ ul {
   animation-delay: 0.5s;
 }
 
-
 /* /Button Styling/*/
-
-
 /* ---------Button 1 (footer)--------*/
-
 .glow-on-hover1 {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -613,7 +589,7 @@ ul {
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
   top: -2px;
-  left:-2px;
+  left: -2px;
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
@@ -625,7 +601,6 @@ ul {
   border-radius: 10px;
   outline: none;
 }
-
 
 .glow-on-hover1:active {
   color: white;
@@ -652,17 +627,15 @@ ul {
   outline: none;
 }
 
-
- #mystory >span {
+#mystory>span {
   display: block;
-  margin-bottom: 10%;
+  margin-bottom: 12%;
   margin-left: 8%;
   margin-right: 8%;
-  margin-top: 8%;
+  margin-top: 10%;
 }
 
-
- #contact >span {
+#contact>span {
   display: block;
   margin-bottom: 10%;
   margin-left: 8%;
@@ -670,17 +643,15 @@ ul {
   margin-top: 10%;
 }
 
-#contact >span >a {
-  text-decoration:none;
+#contact>span>a {
+  text-decoration: none;
 }
 
-#mystory >span >a{
-  text-decoration:none;
+#mystory>span>a {
+  text-decoration: none;
 }
-
 
 /* ---------Button 2--------*/
-
 .glow-on-hover2 {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -705,7 +676,7 @@ ul {
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
   top: -2px;
-  left:-2px;
+  left: -2px;
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
@@ -717,13 +688,12 @@ ul {
   border-radius: 10px;
 }
 
-
 .glow-on-hover2:active {
-  color: rgb(244,244,244);
+  color: rgb(244, 244, 244);
 }
 
 .glow-on-hover2:active:after {
-  background: rgb(244,244,244);
+  background: rgb(244, 244, 244);
 }
 
 .glow-on-hover2:hover:before {
@@ -736,23 +706,30 @@ ul {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgb(244,244,244);
+  background: rgb(244, 244, 244);
   left: 0;
   top: 0;
   border-radius: 10px;
 }
 
-
 @keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
   header {
     text-align: unset;
     padding-top: 20px;
@@ -778,7 +755,7 @@ Medium devices (640px and larger)
     display: none;
   }
 
-  .navtoggle.responsive li  {
+  .navtoggle.responsive li {
     display: inline-block;
     padding: 0 0;
     margin-left: 0;
@@ -814,8 +791,7 @@ Medium devices (640px and larger)
     letter-spacing: 0.5px;
   }
 
-
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
     margin-top: 25px;
     line-height: normal;
@@ -825,7 +801,6 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
   }
-
 
   nav>ul>li {
     list-style-type: none;
@@ -866,7 +841,6 @@ Medium devices (640px and larger)
     padding-right: 1%;
   }
 
-
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -882,7 +856,6 @@ Medium devices (640px and larger)
     padding-bottom: 0;
   }
 
-
   #hero {
     margin-left: 8%;
     margin-right: 8%;
@@ -892,7 +865,7 @@ Medium devices (640px and larger)
     padding-bottom: 0;
   }
 
-  #hero >div> h3 {
+  #hero>div>h3 {
     text-align: center;
     padding-left: 6%;
     padding-right: 6%;
@@ -913,7 +886,6 @@ Medium devices (640px and larger)
     align-items: stretch;
     grid-gap: 30px 2%;
   }
-
 
   #navbar {
     max-width: 1000px;
@@ -956,8 +928,6 @@ Medium devices (640px and larger)
     padding-right: 1%;
   }
 }
-
-
 
 /* ==============================
 Large devices (900px or larger)
@@ -1017,7 +987,6 @@ Large devices (900px or larger)
     padding-right: 6%;
   }
 
-
   #aboutsummary {
     padding-left: 4%;
     padding-right: 4%;
@@ -1057,24 +1026,24 @@ Large devices (900px or larger)
     padding-right: 50px;
     padding-bottom: 10px;
   }
-  #mystory >span {
-   display: block;
-   margin-bottom: 4%;
-   margin-left: 8%;
-   margin-right: 8%;
-   margin-top: 4%;
+
+  #mystory>span {
+    display: block;
+    margin-bottom: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 4%;
   }
 
-
-  #contact >span {
-   display: block;
-   margin-bottom: 4%;
-   margin-left: 8%;
-   margin-right: 8%;
-   margin-top: 4%;
+  #contact>span {
+    display: block;
+    margin-bottom: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 4%;
   }
 
-  footer > svg {
+  footer>svg {
     max-width: 50px;
     display: inline-block;
     text-align: center;
@@ -1085,7 +1054,6 @@ Large devices (900px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-
   body h1 {
     font-size: 2.8em;
   }
@@ -1105,6 +1073,7 @@ X-large devices (1440px or larger)
   body p {
     font-size: 1.5em;
   }
+
   #navbar {
     max-width: 1200px;
     margin-left: auto;
@@ -1130,8 +1099,7 @@ X-large devices (1440px or larger)
     margin-right: auto;
   }
 
-
-  img{
+  img {
     max-width: 1200px;
     display: flex;
     margin: 0 auto;
@@ -1152,6 +1120,7 @@ Extra-large devices (1920px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
   iframe {
     display: flex;
     max-width: 600px;
@@ -1160,9 +1129,10 @@ Extra-large devices (1920px or larger)
     margin-bottom: 3%;
   }
 
-  img{
+  img {
     max-width: 1400px;
   }
+
   #work {
     display: block;
     align-items: center;
