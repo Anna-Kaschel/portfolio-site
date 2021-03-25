@@ -941,6 +941,13 @@ Large devices (900px or larger)
     align-items: center;
   }
 
+  #work .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    grid-gap: 40px 2.5%;
+  }
+
   #navbar {
     max-width: 1200px;
     margin-left: auto;
