@@ -312,7 +312,7 @@ ul {
 }
 
 #contact p, h2 {
-  margin: 0px;
+  margin: 0;
 }
 
 #contact p {
@@ -988,9 +988,9 @@ Large devices (900px or larger)
 
   #contact {
     padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
     padding-bottom: 10px;
+    max-width: 850px;
+    margin: 0 auto;
   }
 
 
