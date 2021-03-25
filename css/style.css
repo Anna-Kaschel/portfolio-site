@@ -828,6 +828,9 @@ Medium devices (640px and larger)
   }
 
   .project-summary {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
     padding-bottom: 0;
   }
 
@@ -927,7 +930,7 @@ Large devices (900px or larger)
     padding-top: 40px;
     padding-right: 30px;
     padding-left: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 
   #hero {
