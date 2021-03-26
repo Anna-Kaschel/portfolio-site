@@ -715,6 +715,10 @@ ul {
   background: white;
 }
 
+.swing {
+  height: 100%;
+}
+
 @keyframes glowing {
   0% {
     background-position: 0 0;
@@ -748,6 +752,10 @@ Medium devices (640px and larger)
   #logo {
     margin: 0;
     max-width: 70px;
+  }
+
+  .swing {
+    height: 100%;
   }
 
   .navtoggle li:not(:last-child) {
