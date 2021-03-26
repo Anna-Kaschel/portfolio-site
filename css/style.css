@@ -312,7 +312,7 @@ ul {
 }
 
 #contact p, h2 {
-  margin: 0px;
+  margin: 0;
 }
 
 #contact p {
@@ -715,6 +715,10 @@ ul {
   background: white;
 }
 
+.swing {
+  height: 100%;
+}
+
 @keyframes glowing {
   0% {
     background-position: 0 0;
@@ -748,6 +752,10 @@ Medium devices (640px and larger)
   #logo {
     margin: 0;
     max-width: 70px;
+  }
+
+  .swing {
+    height: 100%;
   }
 
   .navtoggle li:not(:last-child) {
@@ -828,6 +836,9 @@ Medium devices (640px and larger)
   }
 
   .project-summary {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
     padding-bottom: 0;
   }
 
@@ -914,8 +925,6 @@ Large devices (900px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2%;
-    padding-right: 2%;
   }
 
   .col-md-6 {
@@ -927,7 +936,7 @@ Large devices (900px or larger)
     padding-top: 40px;
     padding-right: 30px;
     padding-left: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 
   #hero {
@@ -938,6 +947,13 @@ Large devices (900px or larger)
   #work {
     display: block;
     align-items: center;
+  }
+
+  #work .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    grid-gap: 40px 2.5%;
   }
 
   #navbar {
@@ -985,9 +1001,9 @@ Large devices (900px or larger)
 
   #contact {
     padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
     padding-bottom: 10px;
+    max-width: 850px;
+    margin: 0 auto;
   }
 
 
